@@ -1,25 +1,52 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import * as style from "./styled";
+import crypto from "crypto";
 
 export default function NewClient() {
-  // const [id, SetId] = useState("");
   const [name, setName] = useState("");
   const [cep, setCep] = useState("");
   const [location, setLocation] = useState("");
   const [number, setNumber] = useState("");
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
+  
+  const history = useHistory();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log({
+    const client_obj = {
+      id: crypto.randomBytes(4).toString("hex"),
       name,
       cep,
       location,
       number,
       city,
       state
-    });
+    };
+
+    if (!name || !cep || !location || !number || !city || !state) {
+      return;
+    }
+
+    if (localStorage.getItem("clients_json") === null) {
+      localStorage.setItem(
+        "clients_json", 
+        JSON.stringify([client_obj])
+      );
+      return;
+    }
+
+    localStorage.setItem(
+      "clients_json",
+      JSON.stringify(
+        [
+          ...JSON.parse(localStorage.getItem("clients_json")),
+          client_obj
+        ]
+      )
+    );
+    history.push("/clients");
   };
 
   return (

@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as style from "./styled";
 
 export default function Clients() {
+  const [ data, setData ] = useState([]);
+
+  useEffect(() => {
+    const ls = localStorage.getItem("clients_json") || "[]";
+    const data = JSON.parse(ls);
+    setData(data);
+  }, []);
 
   return (
     <div>
@@ -26,21 +33,25 @@ export default function Clients() {
           <style.Th>Estado</style.Th>
           <style.Th colSpan="2" style={{ textAlign: "center" }}>Ações</style.Th>
         </style.TableRow>
-
-        <style.TableRow>
-          <style.TableData>2f43g4</style.TableData>
-          <style.TableData>Matheus Enrique Pena Pereira</style.TableData>
-          <style.TableData>Tv. Mauriti</style.TableData>
-          <style.TableData>773</style.TableData>
-          <style.TableData>Pedreira</style.TableData>
-          <style.TableData>Belém</style.TableData>
-          <style.TableData>Pará</style.TableData>
-          <style.TableData style={{ textAlign: "center" }}>
-            <style.EditButton>Editar</style.EditButton></style.TableData>
-          <style.TableData style={{ textAlign: "center" }}>
-            <style.DeleteButton>Excluir</style.DeleteButton>
-          </style.TableData>
-        </style.TableRow>
+        {
+          data.map((client, index) => {
+            return (
+              <style.TableRow key={index}>
+                <style.TableData>{client.id}</style.TableData>
+                <style.TableData>{client.name}</style.TableData>
+                <style.TableData>{client.cep}</style.TableData>
+                <style.TableData>{client.location}</style.TableData>
+                <style.TableData>{client.number}</style.TableData>
+                <style.TableData>{client.city}</style.TableData>
+                <style.TableData>{client.state}</style.TableData>
+                <style.TableData style={{ textAlign: "center" }}>
+                  <style.EditButton>Editar</style.EditButton></style.TableData>
+                <style.TableData style={{ textAlign: "center" }}>
+                  <style.DeleteButton>Excluir</style.DeleteButton>
+                </style.TableData>
+              </style.TableRow>);
+          })
+        }
       </style.Table>
     </div>
   );
