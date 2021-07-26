@@ -1,19 +1,37 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const Table = styled.table`
   border-collapse: collapse;
   width: 100%;
   max-width: 1280px;
-  margin: 30px auto 0 auto;
+  margin: 0 auto;
 `;
 
-export const Caption = styled.caption`
-  font-size: 35px;
+export const Header = styled.header`
+  width: 100%;
+  max-width: 1280px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   color: #fff;
   background-color: #0f151c;
   border-radius: 15px 15px 0 0;
 `;
+
+export const Back = styled(Link)`
+  color: #dddddd;
+  font-size: 30px;
+  margin-left: 30px;
+`;
+
+export const AddNew = styled(Link)`
+  color: #0f0;
+  font-size: 30px;
+  margin-right: 30px;
+`;
+
 
 export const Th = styled.th`
   text-align: left;
@@ -43,7 +61,7 @@ export const EditButton = styled.button`
   border: 0;
   text-align: center;
   color: #fff;
-  background-color: #C41E3A;
+  background-color: #FFC300;
 
   &:hover {
     cursor: pointer;
@@ -58,7 +76,7 @@ export const DeleteButton = styled.button`
   border: 0;
   text-align: center;
   color: #fff;
-  background-color: #FFC300;
+  background-color: #C41E3A;
 
   &:hover {
     cursor: pointer;

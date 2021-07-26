@@ -1,16 +1,16 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const Form = styled.form`
   width: 100%;
   max-width: 550px;
-  margin: 30px auto 0 auto;
+  margin: 0 auto;
 `;
 
 export const Fieldset = styled.fieldset`
   display: flex;
   flex-direction: column;
 
-  padding: 20px;
+  padding: 10px;
   color: #fff;
 `;
 
@@ -47,5 +47,10 @@ export const Button = styled.button`
     color: #fff;
     transition: all ease-in .3s;
   }
+`;
+export const Back = styled(Link)`
+  color: #dddddd;
+  font-size: 30px;
+  margin-left: 30px;
 `;
 

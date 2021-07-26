@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Form = styled.form`
   width: 100%;
@@ -49,3 +50,8 @@ export const Button = styled.button`
   }
 `;
 
+export const Back = styled(Link)`
+  color: #dddddd;
+  font-size: 30px;
+  margin-left: 30px;
+`;
