@@ -44,28 +44,28 @@
 
 <br>
 
-## :dart: About ##
+## :dart: Sobre ##
 
 Desafio #2 da Gama Academy no Hiring Coders: Desenvolver um ecommerce de inventários de produtos e clientes.
 
-## :sparkles: Features ##
+## :sparkles: Funcionalidades ##
 
 :heavy_check_mark: Cadastro de clientes e produtos;\
 :heavy_check_mark: Listagem de clientes e produtos;\
 :heavy_check_mark: Novas funcionalidades em breve;
 
-## :rocket: Technologies ##
+## :rocket: Tecnologias ##
 
 As seguintes ferramentas foram usadas neste projeto:
 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
 
-## :white_check_mark: Requirements ##
+## :white_check_mark: Requerimentos ##
 
 Antes de começar :checkered_flag:, você deve ter o [Git](https://git-scm.com) e o [Node](https://nodejs.org/en/) instalados.
 
-## :checkered_flag: Starting ##
+## :checkered_flag: Rodando a aplicação ##
 
 ```bash
 # Clone este projeto na sua máquina
@@ -83,9 +83,9 @@ $ yarn start
 # O servidor será inicializado em <http://localhost:3000>
 ```
 
-## :memo: License ##
+## :memo: Licença ##
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+Este projeto está sobre a licença MIT. Para mais detalhes, veja o arquivo [LICENSE](LICENSE.md).
 
 
 Feito com muita dedicação :heart: por <a href="https://github.com/matheus3t" target="_blank">Matheus Enrique</a>
