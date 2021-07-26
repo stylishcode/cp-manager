@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+<div align="center" id="top"> 
+  <img src="../src/public/favicon.ico" alt="Cp Manager" title="Cp Manager" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  &#xa0;
 
-## Available Scripts
+  <!-- <a href="https://cpmanager.netlify.app">Demo</a> -->
+</div>
 
-In the project directory, you can run:
+<h1 align="center">Cp Manager</h1>
 
-### `yarn start`
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/cp-manager?color=56BEB8">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{YOUR_GITHUB_USERNAME}}/cp-manager?color=56BEB8">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{YOUR_GITHUB_USERNAME}}/cp-manager?color=56BEB8">
 
-### `yarn test`
+  <img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/cp-manager?color=56BEB8">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/cp-manager?color=56BEB8" /> -->
 
-### `yarn build`
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/cp-manager?color=56BEB8" /> -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/cp-manager?color=56BEB8" /> -->
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- Status -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- <h4 align="center"> 
+	🚧  Cp Manager 🚀 Under construction...  🚧
+</h4> 
 
-### `yarn eject`
+<hr> -->
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<p align="center">
+  <a href="#dart-about">Sobre</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Funcionalidades</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requerimentos</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Rodando a aplicação</a> &#xa0; | &#xa0;
+  <a href="#memo-license">Licensa</a> &#xa0; | &#xa0;
+  <a href="https://github.com/matheus3t" target="_blank">Matheus Enrique</a>
+</p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## :dart: About ##
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Desafio #2 da Gama Academy no Hiring Coders: Desenvolver um ecommerce de inventários de produtos e clientes.
 
-## Learn More
+## :sparkles: Features ##
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+:heavy_check_mark: Cadastro de clientes e produtos;\
+:heavy_check_mark: Listagem de clientes e produtos;\
+:heavy_check_mark: Novas funcionalidades em breve;
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## :rocket: Technologies ##
 
-### Code Splitting
+As seguintes ferramentas foram usadas neste projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
 
-### Analyzing the Bundle Size
+## :white_check_mark: Requirements ##
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Antes de começar :checkered_flag:, você deve ter o [Git](https://git-scm.com) e o [Node](https://nodejs.org/en/) instalados.
 
-### Making a Progressive Web App
+## :checkered_flag: Starting ##
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+# Clone este projeto na sua máquina
+$ git clone https://github.com/matheus3t/cp-manager
 
-### Advanced Configuration
+# Entre no diretório raiz
+$ cd cp-manager
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Instale as dependências
+$ yarn
 
-### Deployment
+# Rode o projeto
+$ yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# O servidor será inicializado em <http://localhost:3000>
+```
 
-### `yarn build` fails to minify
+## :memo: License ##
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+
+
+Feito com muita dedicação :heart: por <a href="https://github.com/matheus3t" target="_blank">Matheus Enrique</a>
+
+&#xa0;
+
+<a href="#top">Voltar para o topo</a>
